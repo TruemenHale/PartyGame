@@ -2,6 +2,13 @@
  * Created by truemenhale on 16/3/11.
  */
 function getQuestion(){
+	//$.post('url',1,function(data){
+	//	if(data.status == 200){
+	//		$.mobile.loading('hide');
+	//	}else {
+	//		alert(data.info);
+	//	}
+	//});
 	var _data = {
 		"first":
 			[
