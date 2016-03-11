@@ -30,6 +30,7 @@
 #GamePage {
   background: url("images/gameBack.jpg") no-repeat center;
   background-size: 100% 100%;
+  position: relative;
 }
 #GamePage .questionBoard {
   width: auto;
@@ -64,6 +65,7 @@
   color: #ffffff;
   position: absolute;
   top: 4%;
+  width: 15%;
   font-size: 15px;
 }
 #GamePage .questionBoard .woodenBar .num {
@@ -97,24 +99,25 @@
   margin-top: 16px;
 }
 #GamePage .Qselecter li {
-  background: url("images/A.png") center no-repeat;
+  background: center no-repeat;
   background-size: 100% 100%;
   list-style: none;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   height: 40px;
   font-size: 12px;
   line-height: 40px;
 }
 #GamePage .Scoretips {
   width: 90%;
-  height: 50%;
   position: absolute;
+  height: auto;
   top: 12%;
-  background: url("images/tips.png") center no-repeat;
-  background-size: 100% 100%;
   display: none;
+}
+#GamePage .Scoretips .tipsBack {
+  width: 100%;
 }
 #GamePage .Scoretips .nextBtn {
   width: 40%;
@@ -122,8 +125,26 @@
   padding-bottom: 2.5%;
   text-align: center;
   color: #ffffff;
-  margin: 0 auto;
-  margin-top: 70%;
+  position: absolute;
+  top: 75%;
   background: url("images/Next.png") center no-repeat;
   background-size: 100% 100%;
+}
+@media (max-height: 470px) {
+  .Qwords {
+    font-size: 9px !important;
+  }
+}
+@media (min-height: 560px) {
+  .Qwords {
+    font-size: 16px !important;
+    line-height: 26px;
+  }
+  .Qselecter {
+    margin-top: 30px !important;
+  }
+  .Qselecter li {
+    height: 50px !important;
+    line-height: 50px !important;
+  }
 }

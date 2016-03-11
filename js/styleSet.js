@@ -7,11 +7,11 @@ $(function(){
 	Board.css('height', $(window).height()*0.55);
 	//题数居中
 	var Qnum = $('.QNum');
-	var this_W = Qnum.width();
-	Qnum.css('left',($(window).width()-this_W)/2);
+	Qnum.css('left',$(window).width()*0.42);
 	//分版居中
 	var scoreBoard = $('.Scoretips');
-	var W_this = scoreBoard.width();
-	console.log(W_this);
 	scoreBoard.css('left',$(window).width()*0.05);
+	//下一轮按钮居中
+	var nextBtn = $('.nextBtn');
+	nextBtn.css('left',$(window).width()*0.25);
 });
