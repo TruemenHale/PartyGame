@@ -8,9 +8,10 @@
 	<title>党史知识竞赛</title>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/questionLoad.js"></script>
 	<script src="js/pageChange.js"></script>
 	<script src="js/styleSet.js"></script>
-	<script src="js/questionLoad.js"></script>
 	<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="animate.min.css">
@@ -22,16 +23,17 @@
 		</div>
 	</div>
 	<div data-role="page" id="GamePage">
-		<div class="questionBoard" data-role="none">
+		<div class="questionBoard animated bounce" data-role="none">
 			<div class="woodenBar">
 				<span class="box left">
-					9:59
+					<span class="seconds">20</span>.
+					<span class="miseconds">00</span>
 				</span>
 				<span class="QNum">
 					第&nbsp;<span class="num">1</span>&nbsp;题
 				</span>
 				<span class="box right">
-					积分:900
+					积分:0
 				</span>
 			</div>
 			<div class="questionBack">
@@ -42,14 +44,41 @@
 			</div>
 		</div>
 		<ul class="Qselecter">
-			<li style="background-image: url(images/a.png)">中国人民政治协商会议第一届会议</li>
-			<li style="background-image: url(images/b.png)">中国人民政治协商会议第一届会议</li>
-			<li style="background-image: url(images/c.png)">坚持党的基本路线和纲领不动摇</li>
+			<li right = 0  style="background-image: url(images/a.png)">中国人民政治协商会议第一届会议</li>
+			<li right = 0 style="background-image: url(images/b.png)">中国人民政治协商会议第一届会议</li>
+			<li right = 0 style="background-image: url(images/c.png)">坚持党的基本路线和纲领不动摇</li>
 		</ul>
 		<div class="Scoretips animated">
 			<img src="images/tips.png" class="tipsBack">
+			<div class="gameOver" style="display: none">
+				<div class="pHolder">
+					<p>排名:<span class="rank">1</span></p>
+					<p>得分:<span class="overScore">1000</span></p>
+				</div>
+			</div>
+			<ul class="scoreShow" style="display: block">
+				<li style="color: #24bd41">
+					<span>
+						<span class="numS time">16</span><br>
+						<span>耗时</span>
+					</span>
+				</li>
+				<li style="color: #12c2dc">
+					<span>
+						<span class="numS rightQ">8</span><br>
+						<span>答对</span>
+					</span>
+				</li>
+				<li style="color: #f6644c">
+					<span>
+						<span class="numS scoreNum">1000</span><br>
+						<span>总分</span>
+					</span>
+				</li>
+			</ul>
 			<div class="nextBtn">下一轮</div>
 		</div>
+		<div class="mask"></div>
 	</div>
 </body>
 </html>

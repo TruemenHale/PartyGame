@@ -14,4 +14,14 @@ $(function(){
 	//下一轮按钮居中
 	var nextBtn = $('.nextBtn');
 	nextBtn.css('left',$(window).width()*0.25);
+	//分数显示
+	var sUl = $('.scoreShow');
+	var asNum = sUl.find('li');
+	sUl.css('left',$(window).width()*0.225);
+	asNum.css('margin-left',$(window).width()*0.0765);
+	asNum.eq(0).css('margin-left',0);
+	//游戏结束
+	var overBoard = $('.gameOver');
+
+	overBoard.css('left',$(window).width()*0.225);
 });
