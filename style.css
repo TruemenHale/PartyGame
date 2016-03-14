@@ -94,6 +94,7 @@
   font-size: 14px;
   margin: 0 auto;
   line-height: 20px;
+  font-weight: normal;
   margin-top: 12px;
 }
 #GamePage .questionBoard .questionBack .Qimg {
@@ -184,14 +185,23 @@
   background: url("images/Next.png") center no-repeat;
   background-size: 100% 100%;
 }
+.donghua {
+  display: block;
+  margin: 100px auto;
+}
 @media (max-height: 480px) {
   .Qwords {
     font-size: 9px !important;
   }
 }
+@media (max-width: 325px) {
+  .Qselecter li {
+    font-size: 8px !important;
+  }
+}
 @media (min-height: 560px) {
   .Qwords {
-    font-size: 18px !important;
+    font-size: 16px !important;
     line-height: 27px;
   }
   .Qselecter {
@@ -200,5 +210,18 @@
   .Qselecter li {
     height: 50px !important;
     line-height: 50px !important;
+  }
+}
+@media (min-height: 585px) {
+  .Qwords {
+    font-size: 17px !important;
+    line-height: 30px !important;
+  }
+  .Qselecter {
+    margin-top: 32px !important;
+  }
+  .Qselecter li {
+    height: 55px !important;
+    line-height: 55px !important;
   }
 }
