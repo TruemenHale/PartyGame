@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft Sans Serif";
+  font-size: 12px;
+  text-shadow: none;
+  list-style: none;
+}
+#rankPage {
+  background: url("images/gameBack.jpg") center no-repeat;
+  background-size: 100% 100%;
+}
+#rankPage .rankHeader {
+  width: 100%;
+}
+#rankPage .ranklist {
+  display: block;
+  width: 91.5%;
+  margin: 0 auto;
+  margin-top: -4px;
+  background: #ffffff;
+  padding-bottom: 10px;
+}
+#rankPage .ranklist li {
+  height: 35px;
+  padding: 3px 8px;
+  line-height: 35px;
+  background: #ffffff;
+  text-align: center;
+}
+#rankPage .ranklist li span {
+  display: inline-block;
+  float: left;
+}
+#rankPage .ranklist li .top3 {
+  width: 60%;
+  margin-top: 7px;
+}
+#rankPage .ranklist li .phoneNum {
+  width: 30%;
+}
+#rankPage .ranklist li .rightNum,
+#rankPage .ranklist li .time,
+#rankPage .ranklist li .rank {
+  width: 15%;
+}
+#rankPage .ranklist li .rightNum {
+  color: #fa8700;
+}
+#rankPage .ranklist li .rank .rankStyle {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background: #e8e8e8;
+  border-radius: 100%;
+}
+#rankPage .ranklist li .score {
+  width: 25%;
+}
+#rankPage .ranklist li .time {
+  color: #f06669;
+}
+#rankPage .ranklist .listShow {
+  background: #e0e0e0;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 8px;
+}
+#rankPage .ranklist .listShow span {
+  color: #333333 !important;
+}
